@@ -1,30 +1,30 @@
 %%
-%% This is file `iscs-thesis.cls',
+%% This is file `iscs-thesis-r.cls',
 %% generated with the docstrip utility.
 %%
 %% The original source files were:
 %%
-%% iscs-thesis.dtx 
+%% iscs-thesis-r.dtx 
 %% 
 %% IMPORTANT NOTICE:
 %% 
 %% For the copyright see the source file.
 %% 
 %% Any modified versions of this file must be renamed
-%% with new filenames distinct from iscs-thesis.cls.
+%% with new filenames distinct from iscs-thesis-r.cls.
 %% 
 %% For distribution of the original source see the terms
-%% for copying and modification in the file iscs-thesis.dtx.
+%% for copying and modification in the file iscs-thesis-r.dtx.
 %% 
 %% This generated file may be distributed as long as the
 %% original source files, as listed above, are part of the
 %% same distribution. (The sources need not necessarily be
 %% in the same archive or directory.)
 \NeedsTeXFormat{LaTeX2e}[1999/01/01]
-\ProvidesClass{iscs-thesis}
-    [2023/02/09 v2
+\ProvidesClass{iscs-thesis-r}
+    [2023/02/10 v2
      Dept of IS/CS thesis class, revised]
-\newcommand\ist@classname{iscs-thesis}
+\newcommand\ist@classname{iscs-thesis-r}
 \newcommand\ist@ahya{%
   You cannot go any further.\MessageBreak
   Type \space X <return> \space to quit.}
@@ -1332,4 +1332,4 @@
 \fi
 \endinput
 %%
-%% End of file `iscs-thesis.cls'.
+%% End of file `iscs-thesis-r.cls'.

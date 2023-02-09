@@ -29,7 +29,7 @@
 \documentclass[a4j]{ujarticle} % Updated from jarticle for upLaTeX
 \usepackage{doc}
 \setcounter{StandardModuleDepth}{1}
-\GetFileInfo{iscs-thesis.dtx}
+\GetFileInfo{iscs-thesis-r.dtx}
 %\OnlyDescription
 %\RecordChanges
 %--------
@@ -48,15 +48,15 @@
 \newcommand{\SpGlue}{\hspace{0em plus 5em}}
 %--------
 \begin{document}
-\DocInput{iscs-thesis.dtx}
+\DocInput{iscs-thesis-r.dtx}
 \end{document}
 %    \end{macrocode}
 %</driver>
 %\fi
 %^^A========================================================
-%\title{ドキュメントクラス \textsf{iscs-thesis} (v2)}
-%\author{八登 崇之 (yato@is.s.u-tokyo.ac.jp)\\松下 祐介 (yskm24t@is.s.u-tokyo.ac.jp)}
-%\date{2023/02/09}
+%\title{ドキュメントクラス \textsf{iscs-thesis-r} (v2)}
+%\author{八登 崇之 (yato@is.s.u-tokyo.ac.jp)\\\small Minor revisions by Yusuke Matsushita (松下 祐介) (yskm24t@is.s.u-tokyo.ac.jp)}
+%\date{Feb 10, 2023}
 %\maketitle
 %^^A--------------------------------------------------------
 %\iffalse # Why is it needed?
@@ -68,7 +68,7 @@
 %\label{sec:Intro}
 %^^A--------------------------------------------------------
 %
-%本ドキュメントクラス \PKN{iscs-thesis} は,
+%本ドキュメントクラス \PKN{iscs-thesis-r} は,
 %東京大学大学院情報理工学系研究科コンピュータ科学専攻
 %および東京大学理学部情報科学科の
 %学位論文(卒業論文/修士論文/博士論文)を組版するためのものです.
@@ -77,15 +77,15 @@
 %\subsection{インストール}
 %\label{ssec:Install}
 %
-%|iscs-thesis.dtx| と |iscs-thesis.ins| のあるディレクトリで
+%|iscs-thesis-r.dtx| と |iscs-thesis-r.ins| のあるディレクトリで
 %\begin{quote}\begin{verbatim}
-%uplatex iscs-thesis.ins
+%uplatex iscs-thesis-r.ins
 %\end{verbatim}\end{quote}
-%を実行すると, そのディレクトリに |iscs-thesis.cls| が
-%生成されるので, その |iscs-thesis.cls| を \TeX\ が読める
+%を実行すると, そのディレクトリに |iscs-thesis-r.cls| が
+%生成されるので, その |iscs-thesis-r.cls| を \TeX\ が読める
 %ディレクトリ(論文のソースファイルのあるディレクトリ等)に
 %置いてください.
-%なお, |iscs-thesis.cls| が一緒に配布されている場合は,
+%なお, |iscs-thesis-r.cls| が一緒に配布されている場合は,
 %第三者による改変が行われていない限り,
 %それは上述の方法で生成されるものと
 %(漢字コードの差異を除いて)同一です.
@@ -105,7 +105,7 @@
 %
 %すなわち, 論文のソースの冒頭の
 %\begin{quote}\begin{verbatim}
-%\documentclass[...]{iscs-thesis}
+%\documentclass[...]{iscs-thesis-r}
 %\end{verbatim}\end{quote}
 %の `|...|' の部分に書くものです.
 %\LaTeXe\ の \PKN{report} クラス(欧文用)と概ね同じ
@@ -200,7 +200,7 @@
 %\subsection{テンプレート}
 %
 %\begin{quote}\footnotesize\begin{verbatim}
-%\documentclass[master,12pt]{iscs-thesis}
+%\documentclass[master,12pt]{iscs-thesis-r}
 %  % 論文の種類とフォントサイズをオプションに
 %%\usepackage{graphicx}% 必要に応じて
 %%\usepackage{mysettings}% 自分用設定
@@ -244,7 +244,7 @@
 %\subsection{コードを変更する場合の注意}
 %\label{ssec:Modify}
 %
-%\PKN{iscs-thesis} のコード(プログラム)を変更する場合には
+%\PKN{iscs-thesis-r} のコード(プログラム)を変更する場合には
 %次の 2 つがあります.
 %
 %\paragraph{全使用者のためになる改良}
@@ -308,7 +308,7 @@
 %そして, 次のようにしてこのファイルを読み込ませれば
 %自分専用の設定になります.
 %\begin{quote}\small\begin{verbatim}
-%\documentclass[senior,12pt]{iscs-thesis}
+%\documentclass[senior,12pt]{iscs-thesis-r}
 %\usepackage{mystyle}
 %  ...(以下略)...
 %\end{verbatim}\end{quote}
@@ -547,7 +547,7 @@
 %    レイアウトはまだあまり調整していない.
 %  \item |english| オプションを追加.
 %  \item 配布する |.cls| ファイルを JIS エンコーディングにしようと
-%    して, \texttt{uplatex --kanji=jis iscs-thesis.ins} とすると,
+%    して, \texttt{uplatex --kanji=jis iscs-thesis-r.ins} とすると,
 %    なぜか出てくる |.cls| が EUC になって困った.
 %    (\texttt{--kanki} はこのような目的で使用するオプション
 %    ではないらしい.)
@@ -632,10 +632,10 @@
 %  \item 英文表題が全て大文字化されないようにした．
 %  \end{itemize}
 %
-%\item[Version 2] [2023/02/09, 松下]
+%\item[Version 2.0 (|iscs-thesis-r|)] [2023/02/10, Matsushita]
 %  \begin{itemize}
-%  \item Use Unicode and modify fonts for \upLaTeX.
-%  \item Use `Acknowledgments' (common US spelling) instead of `Acknowledgements'.
+%  \item Re-encoded in UTF-8 and modified fonts for \upLaTeX.
+%  \item Replaced `Acknowledgements' with `Acknowledgments' (common US spelling).
 %  \item Added a space between |\@etitle| and |\@jtitle|.
 %  \end{itemize}
 %
@@ -675,14 +675,14 @@
 %    \begin{macrocode}
 %<*!isten>
 \NeedsTeXFormat{LaTeX2e}[1999/01/01]
-\ProvidesClass{iscs-thesis}
-    [2023/02/09 v2
+\ProvidesClass{iscs-thesis-r}
+    [2023/02/10 v2
      Dept of IS/CS thesis class, revised]
 %    \end{macrocode}
 %
 %エラー処理のための命令.
 %    \begin{macrocode}
-\newcommand\ist@classname{iscs-thesis}
+\newcommand\ist@classname{iscs-thesis-r}
 \newcommand\ist@ahya{%
   You cannot go any further.\MessageBreak
   Type \space X <return> \space to quit.}
@@ -1233,8 +1233,8 @@
 %止めるために, 明示的な代替設定をしておく.
 %\changes{v1.1a}{2005/02/24}
 %  {和文フォントの明示的な代替の設定.}
-%\changes{v2}{2023/02/09}
-%  {Use JY2 and JT2 instead of JY1 and JT1 for \upLaTeX.}
+%\changes{v2}{2023/02/10}
+%  {Replaced JY1 and JT1 with JY2 and JT2 for \upLaTeX.}
 %    \begin{macrocode}
 \if p\ist@engine\relax
 \DeclareFontShape{JY2}{mc}{m}{it}{<->ssub*mc/m/n}{}
@@ -1669,7 +1669,7 @@
 %1 つのブロック内の行送りが常に |\isttitlesize| で設定した
 %ものになるようにした.
 %今の設定では, タイトルは 12 行(英文・和文あわせて)まで書ける.
-%\changes{v2}{2023/02/09}
+%\changes{v2}{2023/02/10}
 %  {Added a space between |\@etitle| and |\@jtitle|.}
 %    \begin{macrocode}
 \newcommand\ist@maketitle{\begin{ist@titlepage}%
@@ -2416,8 +2416,8 @@
 %\subsection{新しい環境の定義}
 %
 %\qparag{謝辞}
-%\changes{v2}{2023/02/09}
-%  {Use `Acknowledgments' (common US spelling) instead of `Acknowledgements'.}
+%\changes{v2}{2023/02/10}
+%  {Replaced `Acknowledgements' with `Acknowledgments' (common US spelling).}
 %    \begin{macrocode}
 \newenvironment{acknowledge}
                {\begin{titlepage}
