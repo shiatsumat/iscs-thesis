@@ -2,7 +2,7 @@
 
 .PHONY: all
 
-all: iscs-thesis-r.cls iscs-thesis-r.pdf sample-senior.pdf sample-master.pdf
+all: iscs-thesis-r.cls iscs-thesis-r.pdf sample-senior.pdf sample-masters.pdf
 
 iscs-thesis-r.cls: iscs-thesis-r.dtx iscs-thesis-r.ins
 	uplatex iscs-thesis-r.ins
@@ -26,15 +26,15 @@ sample-senior.bbl: sample-senior.aux
 sample-senior.aux: sample-senior.tex
 	uplatex sample-senior.tex
 
-sample-master.pdf: sample-master.dvi
-	dvipdfmx sample-master.dvi
+sample-masters.pdf: sample-masters.dvi
+	dvipdfmx sample-masters.dvi
 
-sample-master.dvi: sample-master.tex sample-master.bbl
-	uplatex sample-master.tex
-	uplatex sample-master.tex
+sample-masters.dvi: sample-masters.tex sample-masters.bbl
+	uplatex sample-masters.tex
+	uplatex sample-masters.tex
 
-sample-master.bbl: sample-master.aux
-	upbibtex sample-master.aux
+sample-masters.bbl: sample-masters.aux
+	upbibtex sample-masters.aux
 
-sample-master.aux: sample-master.tex
-	uplatex sample-master.tex
+sample-masters.aux: sample-masters.tex
+	uplatex sample-masters.tex
