@@ -56,7 +56,7 @@
 %^^A========================================================
 %\title{ドキュメントクラス \textsf{iscs-thesis-r} (v2)}
 %\author{八登 崇之 (yato@is.s.u-tokyo.ac.jp)\\\small Minor revisions by Yusuke Matsushita (松下 祐介) (yskm24t@is.s.u-tokyo.ac.jp)}
-%\date{Feb 10, 2023}
+%\date{Feb 11, 2023}
 %\maketitle
 %^^A--------------------------------------------------------
 %\iffalse # Why is it needed?
@@ -632,9 +632,10 @@
 %  \item 英文表題が全て大文字化されないようにした．
 %  \end{itemize}
 %
-%\item[Version 2.0 (|iscs-thesis-r|)] [2023/02/10, Matsushita]
+%\item[Version 2.0 (|iscs-thesis-r|)] [2023/02/11, Matsushita]
 %  \begin{itemize}
 %  \item Re-encoded in UTF-8 and modified fonts for \upLaTeX.
+%  \item Replaced 'Master Thesis' and 'Doctor Thesis' with 'Master's Thesis' and 'Doctoral Thesis'.
 %  \item Replaced `Acknowledgements' with `Acknowledgments' (common US spelling).
 %  \item Added a space between |\@etitle| and |\@jtitle|.
 %  \end{itemize}
@@ -676,7 +677,7 @@
 %<*!isten>
 \NeedsTeXFormat{LaTeX2e}[1999/01/01]
 \ProvidesClass{iscs-thesis-r}
-    [2023/02/10 v2
+    [2023/02/11 v2
      Dept of IS/CS thesis class, revised]
 %    \end{macrocode}
 %
@@ -1233,7 +1234,7 @@
 %止めるために, 明示的な代替設定をしておく.
 %\changes{v1.1a}{2005/02/24}
 %  {和文フォントの明示的な代替の設定.}
-%\changes{v2}{2023/02/10}
+%\changes{v2}{2023/02/11}
 %  {Replaced JY1 and JT1 with JY2 and JT2 for \upLaTeX.}
 %    \begin{macrocode}
 \if p\ist@engine\relax
@@ -1669,7 +1670,7 @@
 %1 つのブロック内の行送りが常に |\isttitlesize| で設定した
 %ものになるようにした.
 %今の設定では, タイトルは 12 行(英文・和文あわせて)まで書ける.
-%\changes{v2}{2023/02/10}
+%\changes{v2}{2023/02/11}
 %  {Added a space between |\@etitle| and |\@jtitle|.}
 %    \begin{macrocode}
 \newcommand\ist@maketitle{\begin{ist@titlepage}%
@@ -2416,7 +2417,7 @@
 %\subsection{新しい環境の定義}
 %
 %\qparag{謝辞}
-%\changes{v2}{2023/02/10}
+%\changes{v2}{2023/02/11}
 %  {Replaced `Acknowledgements' with `Acknowledgments' (common US spelling).}
 %    \begin{macrocode}
 \newenvironment{acknowledge}
@@ -2845,6 +2846,8 @@
 %「中間報告」に変更した.
 %中間報告(要旨提出)の様式には不明な点も多いのだが,
 %これが最も正しいことにしてしまおう.
+%\changes{v2}{2023/02/11}
+%  {Replaced `Master Thesis' and `Doctor Thesis' with `Master's Thesis' and `Doctoral Thesis'.}
 %    \begin{macrocode}
 \if@seniorthesis
  \newcommand\ethesisname{A Senior Thesis}
@@ -2854,14 +2857,14 @@
  \newcommand\thesisgrade{Bachelor}
  \newcommand\ist@whatscience{Information Science}
 \else \if@masterthesis
- \newcommand\ethesisname{A Master Thesis}
+ \newcommand\ethesisname{A Master's Thesis}
  \newcommand\einterimname{An Interim Report (Abstract)}
  \newcommand\jthesisname{\ist@j@master}
  \newcommand\jinterimname{\ist@j@interim}
  \newcommand\thesisgrade{Master}
  \newcommand\ist@whatscience{Computer Science}
 \else \if@doctorthesis
- \newcommand\ethesisname{A Doctor Thesis}
+ \newcommand\ethesisname{A Doctoral Thesis}
  \newcommand\einterimname{An Interim Report (Abstract)}
  \newcommand\jthesisname{\ist@j@doctor}
  \newcommand\jinterimname{\ist@j@interim}

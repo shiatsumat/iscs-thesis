@@ -12,6 +12,7 @@ Compared to the [original `iscs-thesis` (v1.3b)](https://www.i.u-tokyo.ac.jp/edu
 this undergoes the following updates:
 
 - Re-encoded in UTF-8 and modified fonts for upLaTeX.
+- Replaced 'Master Thesis' and 'Doctor Thesis' with 'Master's Thesis' and 'Doctoral Thesis'.
 - Replaced 'Acknowledgements' with 'Acknowledgments' (common US spelling).
 - Added a space between `\@etitle` and `\@jtitle`.
 - Made minor changes to the samples.

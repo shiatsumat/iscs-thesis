@@ -22,7 +22,7 @@
 %% in the same archive or directory.)
 \NeedsTeXFormat{LaTeX2e}[1999/01/01]
 \ProvidesClass{iscs-thesis-r}
-    [2023/02/10 v2
+    [2023/02/11 v2
      Dept of IS/CS thesis class, revised]
 \newcommand\ist@classname{iscs-thesis-r}
 \newcommand\ist@ahya{%
@@ -1256,14 +1256,14 @@
  \newcommand\thesisgrade{Bachelor}
  \newcommand\ist@whatscience{Information Science}
 \else \if@masterthesis
- \newcommand\ethesisname{A Master Thesis}
+ \newcommand\ethesisname{A Master's Thesis}
  \newcommand\einterimname{An Interim Report (Abstract)}
  \newcommand\jthesisname{\ist@j@master}
  \newcommand\jinterimname{\ist@j@interim}
  \newcommand\thesisgrade{Master}
  \newcommand\ist@whatscience{Computer Science}
 \else \if@doctorthesis
- \newcommand\ethesisname{A Doctor Thesis}
+ \newcommand\ethesisname{A Doctoral Thesis}
  \newcommand\einterimname{An Interim Report (Abstract)}
  \newcommand\jthesisname{\ist@j@doctor}
  \newcommand\jinterimname{\ist@j@interim}
